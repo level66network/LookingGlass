@@ -84,6 +84,7 @@ if (file_exists('LookingGlass/Config.php')) {
                     echo "<a href=\"{$val}.test\" id=\"testfile\">{$val}</a> ";
                   }
                 ?></p>
+                <?php if(!empty($iperf3)){ ?><p>Test iPerf3: <code><?php echo $iperf3; ?></code></p><?php } ?>
               </div>
               <p>Your IP Address: <b><a href="#tests" id="userip"><?php echo $_SERVER['REMOTE_ADDR']; ?></a></b></p>
             </div>
