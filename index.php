@@ -136,6 +136,7 @@ if (file_exists('LookingGlass/Config.php')) {
         <p class="pull-right">
             <a href="#">Back to top</a>
         </p>
+	<?php if(!empty($footer)) { echo '<p>' . implode($footer, ' | ') . '</p>'; } ?>
         <p>Powered by <a href="http://github.com/telephone/LookingGlass">LookingGlass</a></p>
       </footer>
 
