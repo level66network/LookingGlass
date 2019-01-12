@@ -77,7 +77,7 @@ if (file_exists('LookingGlass/Config.php')) {
               <span id="legend">Network information</span><!-- IE/Safari dislike <legend> out of context -->
               <p>Server Location: <b><?php echo $serverLocation; ?></b></p>
               <div style="margin-left: 10px;">
-                <p><?php if (!empty($ipv4)) { echo 'Test IPv4: ',$ipv6; } ?></p>
+                <p><?php if (!empty($ipv4)) { echo 'Test IPv4: ',$ipv4; } ?></p>
                 <p><?php if (!empty($ipv6)) { echo 'Test IPv6: ',$ipv6; } ?></p>
                 <p>Test files: <?php
                   foreach ($testFiles as $val) {
